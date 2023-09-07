@@ -7,7 +7,7 @@ function addNumbers() {
     const sum = a + b;
     console.log(`Inside if block - sum is: ${sum}`);
   }
-  console.log(`Outside if block - sum is: ${a + b}`);
+  //console.log(`Outside if block - sum is: ${sum}`); - reference error, sum is not defined
 }
 
 addNumbers();
