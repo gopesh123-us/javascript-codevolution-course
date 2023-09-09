@@ -25,4 +25,4 @@ const fn = myouter(30);
 fn();
 fn();
 func();
-fn();
+fn(); 

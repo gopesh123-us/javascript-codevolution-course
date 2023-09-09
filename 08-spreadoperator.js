@@ -21,13 +21,32 @@ console.log(remaining);
 //spread operator in case of objects
 const employees = [
   {
-    name: "Kirti",
-    id: "k1",
-    roll: 1,
+    ename: "Kirti",
+    eid: "k1",
+    eroll: 1,
   },
   {
-    name: "Gopi",
-    id: "g1",
-    roll: 2,
+    ename: "Gopi",
+    eid: "g1",
+    eroll: 2,
   },
 ];
+
+const { ename, eid, ...ebal } = employees[0];
+console.log(ename, eid, ebal);
+
+const mgrs = [
+  {
+    mname: "Sam",
+    mid: "s1",
+    mroll: 4,
+  },
+  {
+    mname: "John",
+    mid: "j1",
+    mroll: 4,
+  },
+];
+
+const data = [...employees, ...mgrs];
+console.log(data);
